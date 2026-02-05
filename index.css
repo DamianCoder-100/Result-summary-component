@@ -17,6 +17,10 @@ h2 {
     color: hsl(0, 0%, 100%);
 }
 
+h3{
+    margin: 0;
+}
+
 .summary {
     color: black;
 }
