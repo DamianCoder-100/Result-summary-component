@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    background-color: rgb(193, 215, 244);
 
 }
 
@@ -18,6 +19,11 @@ h2 {
 
 .summary {
     color: black;
+}
+
+.title{
+    color: hsl(241, 100%, 89%);
+
 }
 
 .flex-1 {
@@ -67,7 +73,7 @@ h2 {
 
 }
 
-.inner-flex{
+.inner-flex {
     display: flex;
     gap: 10px;
     align-items: center;
@@ -98,6 +104,7 @@ h2 {
     padding-bottom: 30px;
     width: 320px;
     margin: 0 auto;
+    background-color: hsl(221, 100%, 96%);
 }
 
 .list {
@@ -134,7 +141,60 @@ button {
     background: hsl(224, 30%, 27%);
 
 }
-button:hover{
-    background-color:  hsl(241, 81%, 54%);
+
+button:hover {
+    background-color: hsl(241, 81%, 54%);
     cursor: pointer;
+}
+
+@media(min-width: 1440px){
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .title{
+    color: hsl(241, 100%, 89%);
+    font-size: 20px;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* width: 100%; */
+    box-shadow: 10px 10px 20px rgba(hsl(0, 100%, 50%), green, hsl(240, 100%, 50%), alpha);
+}
+
+.top-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 400px;
+    flex-shrink: 0;
+    /* display: block; */
+}
+.bottom-section{
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    padding-right: 30px;
+    
+}
+.circle{
+    width: 150px;
+    height: 150px;
+}
+
+#circleText{
+    font-size: 50px;
+}
+
+.text-2{
+    width: 210px;
+    margin-top: 0;
+}
 }
